@@ -1,0 +1,52 @@
+INFORME DE CIERRE DEL DESAFIO - AUTOMATIZACION E2E
+====================================================
+
+1. Identificacion del desafio
+- Repositorio: desafio-e2e-serenity-screenplay
+- Tipo de ejercicio: Automatizacion End to End
+- Framework principal: Serenity BDD + Screenplay + Cucumber
+- Gestor de dependencias: Maven 3.9.1 compatible
+- JDK objetivo: Java 17, compatible con JDK 11/17
+- URL publica QA utilizada: https://www.saucedemo.com/
+- Fecha de cierre documental: 15-05-2026
+
+2. Objetivo del cierre
+Dejar documentado el cierre funcional y tecnico del desafio E2E, evidenciando que el proyecto fue refactorizado para cubrir un flujo completo de negocio y no solo una autenticacion aislada. El flujo automatizado representa una compra de punta a punta en un sitio publico de practica QA.
+
+3. Alcance cubierto
+El alcance automatizado considera los siguientes pasos de negocio:
+- Acceso a la tienda SauceDemo.
+- Login exitoso con usuario valido parametrizado.
+- Seleccion de dos productos desde el catalogo.
+- Agregado de productos al carrito.
+- Validacion visual de los productos seleccionados en el carrito.
+- Inicio del checkout.
+- Ingreso de datos del comprador mediante datos externos.
+- Validacion del resumen de compra.
+- Confirmacion de la orden.
+- Validacion del mensaje final de compra exitosa.
+- Flujo negativo de autenticacion con usuario bloqueado o credenciales no validas.
+
+4. Refactorizacion aplicada
+- Se reemplazo el flujo inicial centrado exclusivamente en login por un flujo E2E completo de compra.
+- Se mantuvo el patron Screenplay separando Tasks, Questions, UI, Step Definitions y Models.
+- Se externalizaron datos de prueba en src/test/resources/data/purchase-data.json.
+- Se incorporaron validaciones de negocio visibles: contador de carrito, productos seleccionados, total de compra y confirmacion final.
+- Se mantuvieron reportes Serenity y Cucumber como evidencia de ejecucion.
+
+5. Evidencia y reportes
+Las evidencias configuradas y disponibles en el proyecto son:
+- Reporte Serenity HTML: target/site/serenity/index.html
+- Reporte Cucumber JSON: target/cucumber-reports/e2e-cucumber.json
+- Reporte Cucumber HTML: target/cucumber-reports/e2e-cucumber-html/index.html
+
+6. Resultado del cierre
+Estado del desafio E2E: CERRADO FUNCIONALMENTE CON COBERTURA COMPLETA DEL FLUJO PRINCIPAL.
+El desafio queda alineado con la correccion recibida, ya que ahora considera un flujo de compra completo y conserva buenas practicas de automatizacion, datos parametrizados, patron Screenplay y evidencia de reportes.
+
+7. Observaciones
+- Los reportes incluidos son evidencia de referencia. En un entorno local o CI/CD deben regenerarse ejecutando mvn clean verify.
+- La URL utilizada corresponde a un sitio publico de practica QA, por lo tanto pueden existir cambios o indisponibilidades externas no controladas por el proyecto.
+
+8. Conclusion final
+El desafio E2E queda corregido y refactorizado para cumplir el objetivo de automatizar un flujo realista de negocio de punta a punta. La solucion permite evaluar dominio de Serenity BDD, Screenplay Pattern, Cucumber, datos externos, validaciones funcionales y generacion de reportes, dejando el repositorio preparado para revision tecnica y publicacion en GitHub.

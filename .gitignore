@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+*.iml
+/logs/
+# Se dejan reportes target incluidos como evidencia del reto.

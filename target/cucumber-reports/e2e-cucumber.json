@@ -1,0 +1,10 @@
+[
+  {
+    "uri": "src/test/resources/features/compra_e2e.feature",
+    "name": "Compra E2E en sitio público QA SauceDemo",
+    "elements": [
+      {"name": "Compra exitosa de dos productos con datos parametrizados en JSON", "type": "scenario", "keyword": "Escenario", "tags": [{"name":"@e2e"},{"name":"@compra"},{"name":"@smoke"}], "steps": []},
+      {"name": "Validación de login negativo antes del flujo de compra", "type": "scenario", "keyword": "Esquema del escenario", "tags": [{"name":"@e2e"},{"name":"@login"},{"name":"@negative"}], "steps": []}
+    ]
+  }
+]

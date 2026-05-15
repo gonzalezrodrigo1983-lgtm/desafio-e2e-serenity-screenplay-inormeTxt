@@ -1,0 +1,24 @@
+{
+  "standard_checkout": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "products": [
+      "Sauce Labs Backpack",
+      "Sauce Labs Bike Light"
+    ],
+    "firstName": "Rodrigo",
+    "lastName": "Gonzalez",
+    "postalCode": "8320000",
+    "expectedConfirmation": "Thank you for your order!"
+  },
+  "locked_out_user": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedError": "Sorry, this user has been locked out."
+  },
+  "invalid_user": {
+    "username": "usuario_inexistente",
+    "password": "secret_sauce",
+    "expectedError": "Username and password do not match"
+  }
+}
